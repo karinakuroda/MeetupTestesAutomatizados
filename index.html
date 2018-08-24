@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>CSS</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Testes Automatizados</h1>
+			</section>
+			<section>
+				<h2>Por quê automatizar?</h2>
+				<p>
+					Todo desenvolvimento precisa de um conjunto de testes e toda entrega tem seus defeitos.
+					O objetivo do QA é encontrar esses defeitos antes da entrega mas sempre acaba passando alguma validação, por melhor que seja o teste manual. 
+					O teste automatizado é a melhor forma de aumentar a eficiência e cobertura dos testes.
+				</p>
+			</section>
+
+			<!-- VANTAGENS -->
+
+			<section>
+				<section>
+					<h1>Vantagens</h1>
+				</section>
+				<section>
+					<h2>Alta cobertura</h2>
+					<p>É possível rodar o mesmo teste em diferentes máquinas com diferentes configurações</p>
+				</section>
+				<section>
+					<h2>+ Tempo</h2>
+					<p>
+						A execução do teste manual repetidamente custa tempo e dinheiro. 
+						Já o teste automatizado, uma vez criado, pode rodar várias vezes sem custo adicional e muito mais rápido que um teste manual.
+					</p>
+				</section>
+				<section>
+					<h2>+ Precisão</h2>
+					<p>No meio de vários testes monótonos, até o melhor dos testers pode cometer erros. 
+					O teste automatizado realiza sempre os mesmos passos precisamente.
+				</section>
+			
+				<section>
+					<h2>Testers + Felizes :D</h2>
+					<p>Os testers se livram de um trabalho repetitivo e ganham tempo para criar novos testes automatizados ou validar features mais complexas.
+					</p>
+				</section>
+			</section>
+
+			<section>
+				
+				<section>
+					<h3>Como funciona hoje?</h3>
+					<p>
+						<img data-src="img/processo.png">
+					</p>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<h2>Como ficaria?</h2>
+					<p>
+						<img data-src="img/processoNovo.png">
+					</p>
+
+				</section>
+
+			</section>
+
+
+			<section>
+				<section>
+					<h2>A Estrutura</h2>
+					<p>
+						Estamos utilizando algumas ferramentas que auxiliam na criação e execução dos testes, são elas:
+						<ul>
+							<li>SpecFlow (BDD)</li>
+							<li>Selenium</li>
+							<li>Apium</li>
+							<li>C#</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>O que é o BDD?</h2>
+					<p>
+					O BDD é uma técnica de desenvolvimento de software, onde os programadores desenvolvem o software direcionados por comportamentos. Tais comportamentos são a nível de negócio e ajudam o programador a entender melhor a funcionalidade que será desenvolvida.
+						</p>
+				</section>
+				<section>
+					<p>
+						A técnica de BDD confia no uso de um vocabulário bem específico e pequeno, com o objetivo de minimizar a falta de comunicação e garantir que TODOS (stakeholders, desenvolvedores, testadores, analistas e gerentes), não estão apenas na mesma página, mas também estão usando as mesmas palavras. BDD pode ser considerada uma Ubiquitous Language (“Linguagem Onipresente”).
+				
+					</p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Na prática</h2>
+					<p>
+						<img data-src="img/1.PNG">
+					</p>
+					<p>
+						<img data-src="img/2.PNG">
+					</p>
+				</section>
+			</section>
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+
+</body>
+
+</html>
